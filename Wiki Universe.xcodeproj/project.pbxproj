@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E177A6D072D08C8B5CF9F94B /* Pods_Wiki_Universe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67982A7C2186619543296AA /* Pods_Wiki_Universe.framework */; };
 		E39BDCCD25E510ED009C5920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BDCCC25E510ED009C5920 /* AppDelegate.swift */; };
 		E39BDCCF25E510ED009C5920 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BDCCE25E510ED009C5920 /* SceneDelegate.swift */; };
-		E39BDCD125E510ED009C5920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BDCD025E510ED009C5920 /* ViewController.swift */; };
+		E39BDCD125E510ED009C5920 /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BDCD025E510ED009C5920 /* ImageClassificationViewController.swift */; };
 		E39BDCD425E510ED009C5920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39BDCD225E510ED009C5920 /* Main.storyboard */; };
 		E39BDCD725E510ED009C5920 /* Wiki_Universe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E39BDCD525E510ED009C5920 /* Wiki_Universe.xcdatamodeld */; };
 		E39BDCD925E510EF009C5920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39BDCD825E510EF009C5920 /* Assets.xcassets */; };
 		E39BDCDC25E510EF009C5920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39BDCDA25E510EF009C5920 /* LaunchScreen.storyboard */; };
+		E39BDCE725E52927009C5920 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E39BDCE625E52927009C5920 /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42A18665245958DFFA568538 /* Pods-Wiki Universe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiki Universe.debug.xcconfig"; path = "Target Support Files/Pods-Wiki Universe/Pods-Wiki Universe.debug.xcconfig"; sourceTree = "<group>"; };
+		A67982A7C2186619543296AA /* Pods_Wiki_Universe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wiki_Universe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC977828D0C0000EB178300 /* Pods-Wiki Universe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiki Universe.release.xcconfig"; path = "Target Support Files/Pods-Wiki Universe/Pods-Wiki Universe.release.xcconfig"; sourceTree = "<group>"; };
 		E39BDCC925E510ED009C5920 /* Wiki Universe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiki Universe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39BDCCC25E510ED009C5920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39BDCCE25E510ED009C5920 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E39BDCD025E510ED009C5920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E39BDCD025E510ED009C5920 /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
 		E39BDCD325E510ED009C5920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E39BDCD625E510ED009C5920 /* Wiki_Universe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wiki_Universe.xcdatamodel; sourceTree = "<group>"; };
 		E39BDCD825E510EF009C5920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E39BDCDB25E510EF009C5920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E39BDCDD25E510EF009C5920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39BDCE625E52927009C5920 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E177A6D072D08C8B5CF9F94B /* Pods_Wiki_Universe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26B67D46208A8BD1C39741AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67982A7C2186619543296AA /* Pods_Wiki_Universe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		464CEC641C1F06C05CC170F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42A18665245958DFFA568538 /* Pods-Wiki Universe.debug.xcconfig */,
+				AAC977828D0C0000EB178300 /* Pods-Wiki Universe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E39BDCC025E510ED009C5920 = {
 			isa = PBXGroup;
 			children = (
 				E39BDCCB25E510ED009C5920 /* Wiki Universe */,
 				E39BDCCA25E510ED009C5920 /* Products */,
+				464CEC641C1F06C05CC170F9 /* Pods */,
+				26B67D46208A8BD1C39741AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +85,10 @@
 		E39BDCCB25E510ED009C5920 /* Wiki Universe */ = {
 			isa = PBXGroup;
 			children = (
+				E39BDCE525E52910009C5920 /* MLModels */,
 				E39BDCCC25E510ED009C5920 /* AppDelegate.swift */,
 				E39BDCCE25E510ED009C5920 /* SceneDelegate.swift */,
-				E39BDCD025E510ED009C5920 /* ViewController.swift */,
+				E39BDCD025E510ED009C5920 /* ImageClassificationViewController.swift */,
 				E39BDCD225E510ED009C5920 /* Main.storyboard */,
 				E39BDCD825E510EF009C5920 /* Assets.xcassets */,
 				E39BDCDA25E510EF009C5920 /* LaunchScreen.storyboard */,
@@ -70,6 +98,14 @@
 			path = "Wiki Universe";
 			sourceTree = "<group>";
 		};
+		E39BDCE525E52910009C5920 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				E39BDCE625E52927009C5920 /* MobileNet.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E39BDCE025E510EF009C5920 /* Build configuration list for PBXNativeTarget "Wiki Universe" */;
 			buildPhases = (
+				4C9C05B1D5271E6AE18C2530 /* [CP] Check Pods Manifest.lock */,
 				E39BDCC525E510ED009C5920 /* Sources */,
 				E39BDCC625E510ED009C5920 /* Frameworks */,
 				E39BDCC725E510ED009C5920 /* Resources */,
+				296EC2470A4E177D369BFDB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,12 +173,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		296EC2470A4E177D369BFDB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wiki Universe/Pods-Wiki Universe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wiki Universe/Pods-Wiki Universe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wiki Universe/Pods-Wiki Universe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C9C05B1D5271E6AE18C2530 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wiki Universe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E39BDCC525E510ED009C5920 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39BDCD125E510ED009C5920 /* ViewController.swift in Sources */,
+				E39BDCD125E510ED009C5920 /* ImageClassificationViewController.swift in Sources */,
+				E39BDCE725E52927009C5920 /* MobileNet.mlmodel in Sources */,
 				E39BDCCD25E510ED009C5920 /* AppDelegate.swift in Sources */,
 				E39BDCD725E510ED009C5920 /* Wiki_Universe.xcdatamodeld in Sources */,
 				E39BDCCF25E510ED009C5920 /* SceneDelegate.swift in Sources */,
@@ -287,6 +368,7 @@
 		};
 		E39BDCE125E510EF009C5920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A18665245958DFFA568538 /* Pods-Wiki Universe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +388,7 @@
 		};
 		E39BDCE225E510EF009C5920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC977828D0C0000EB178300 /* Pods-Wiki Universe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

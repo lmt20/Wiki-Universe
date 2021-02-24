@@ -1,0 +1,6 @@
+framework module Pods_Wiki_Universe {
+  umbrella header "Pods-Wiki Universe-umbrella.h"
+
+  export *
+  module * { export * }
+}
