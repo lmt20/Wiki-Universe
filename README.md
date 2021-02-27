@@ -12,8 +12,7 @@ INTRODUCTION
 - It predicts the type of object and provides its specific information based on Wikipedia website
 - This app used swift as programming language. Used Alamofire library to handle network requests, SwiftyJSON to parse JSON and SDWebImage to download image
 - Connecting to Wikipedia API to get object type infomation. Connecting to Google Translate API to translate language to Vietnamese language
-- Used CoreML to implement Mobinet model (Machine Learning model is provided by Apple). This provided modelis not customized and trained with custom data, so the accuracy will not be high
-Anyway, this is just an app for fun ^^
+- Used CoreML to implement Mobinet model (Machine Learning model is provided by Apple). This provided modelis not customized and trained with custom data, so the accuracy will not be high. Anyway, this is just an app for fun ^^
 
 REQUIREMENTS
 ------------
