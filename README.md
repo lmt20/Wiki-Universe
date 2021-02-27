@@ -14,6 +14,9 @@ INTRODUCTION
 - Connecting to Wikipedia API to get object type infomation. Connecting to Google Translate API to translate language to Vietnamese language
 - Used CoreML to implement Mobinet model (Machine Learning model is provided by Apple). This provided modelis not customized and trained with custom data, so the accuracy will not be high. Anyway, this is just an app for fun ^^
 
+![alt text](https://github.com/lmt20/Images/blob/main/Wiki%20Universe/IMG_6890.PNG)
+![alt text](https://github.com/lmt20/Images/blob/main/Wiki%20Universe/IMG_6889.PNG)
+
 REQUIREMENTS
 ------------
     platform :ios, '9.0'
@@ -21,6 +24,8 @@ REQUIREMENTS
     pod 'Alamofire', '~> 5.2'
     pod 'SwiftyJSON', '~> 4.0'
     pod 'SDWebImage', '~> 5.0'
+    
+    
 
 AUTHOR
 -----------
