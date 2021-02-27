@@ -11,7 +11,7 @@ INTRODUCTION
 - This is a utility IOS app. It allows you to detect the main object in an image using your camera or through your photo library. 
 - It predicts the type of object and provides its specific information based on Wikipedia website
 - It used swift as programming language, Alamofire library to handle network requests, SwiftyJSON to parse JSON and SDWebImage to download image
-- It is connected to Wikipedia API to get object type infomation, Google Translate API to translate language to Vietnamese language
+- It can connect with Wikipedia API to get object type infomation, Google Translate API to translate language to Vietnamese language
 - It used CoreML to implement Mobinet model (Machine Learning model is provided by Apple). This provided model is not customized and trained with custom data, so the accuracy will not be high. Anyway, this is just an app for fun ^^
 
 ![alt text](https://github.com/lmt20/Images/blob/main/Wiki%20Universe/IMG_6890.PNG)
